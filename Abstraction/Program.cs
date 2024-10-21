@@ -21,7 +21,7 @@ namespace Abstraction
         {
             public override void Gorev()
             {
-                Console.WriteLine($"{Ad} {Soyad}: Şirketin {Departman} departmanında çalışıyorum.");
+                Console.WriteLine($"{Ad} {Soyad}: Şirketin  {Departman} departmanında çalışıyorum.");
             }
         }
         static void Main(string[] args)
