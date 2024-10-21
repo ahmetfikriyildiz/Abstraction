@@ -17,42 +17,28 @@ namespace Abstraction
             // Abstract Metot 
             public abstract void Gorev();
         }
-        public class YazilimGelistirici : Calisan
+        public class GörevBelirleyici : Calisan
         {
             public override void Gorev()
             {
-                Console.WriteLine($"{Ad} {Soyad}: Yazılım Geliştirici olarak çalışıyorum.");
-            }
-        }
-        public class SatisTemsilcisi : Calisan
-        {
-            public override void Gorev()
-            {
-                Console.WriteLine($"{Ad} {Soyad}: Satış Temsilcisi olarak çalışıyorum.");
-            }
-        }
-        public class ProjeYoneticisi : Calisan
-        {
-            public override void Gorev()
-            {
-                Console.WriteLine($"{Ad} {Soyad}: Proje Yöneticisi olarak çalışıyorum.");
+                Console.WriteLine($"{Ad} {Soyad}: Şirketin {Departman} departmanında çalışıyorum.");
             }
         }
         static void Main(string[] args)
         {
-            ProjeYoneticisi projeYoneticisi = new ProjeYoneticisi
+            GörevBelirleyici projeYoneticisi = new GörevBelirleyici
             {
                 Ad = "Hasan",
                 Soyad = "Çıldırmış",
                 Departman = "Proje Yönetimi"
             };
-            YazilimGelistirici yazilimGelistirici = new YazilimGelistirici
+            GörevBelirleyici yazilimGelistirici = new GörevBelirleyici
             {
                 Ad = "Ahmet",
                 Soyad = "Yılmaz",
                 Departman = "Yazılım"
             };
-            SatisTemsilcisi satisTemsilcisi = new SatisTemsilcisi
+            GörevBelirleyici satisTemsilcisi = new GörevBelirleyici
             {
                 Ad = "Ayşe",
                 Soyad = "Demir",
